@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitoterapia Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧙‍♀️🧹</text></svg>">
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Fitoterapia 🌿</h2>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" data-topic="welcome"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#" data-topic="fundamentos"><i class="fas fa-leaf"></i> Fundamentos</a></li>
+                    <li><a href="#" data-topic="depurativas"><i class="fas fa-spa"></i> Plantas Depurativas</a></li>
+                    <li><a href="#" data-topic="curativas"><i class="fas fa-first-aid"></i> Plantas Curativas</a></li>
+                    <li><a href="#" data-topic="sintomaticas"><i class="fas fa-thermometer-half"></i> Plantas Sintomáticas</a></li>
+                    <li><a href="#" data-topic="preventivas"><i class="fas fa-shield-alt"></i> Plantas Preventivas</a></li>
+                    <li><a href="#" data-topic="obstetricia-primer"><i class="fas fa-baby"></i> Embarazo: Primer Trimestre</a></li>
+                    <li><a href="#" data-topic="obstetricia-segundo"><i class="fas fa-baby-carriage"></i> Embarazo: Segundo Trimestre</a></li>
+                    <li><a href="#" data-topic="obstetricia-tercer"><i class="fas fa-child"></i> Embarazo: Tercer Trimestre</a></li>
+                    <li><a href="#" data-topic="alergias"><i class="fas fa-allergies"></i> Alergias</a></li>
+                    <li><a href="#" data-topic="dolores-cabeza"><i class="fas fa-headache"></i> Dolores de Cabeza</a></li>
+                    <li><a href="#" data-topic="menstruales"><i class="fas fa-venus"></i> Problemas Menstruales</a></li>
+                    <li><a href="#" data-topic="cancer"><i class="fas fa-ribbon"></i> Contra el Cáncer</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Bienvenido al Estudio de Fitoterapia</h1>
+            </header>
+
+            <section id="content-display" class="content-display">
+                <!-- Content will be loaded here by JavaScript -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Chatbot UI -->
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <h3>Asistente de Fitoterapia 🧙‍♀️</h3>
+            <div class="chat-header-controls">
+                <button id="clear-chat" class="clear-chat-btn" title="Limpiar chat"><i class="fas fa-eraser"></i></button>
+                <button id="close-chat" class="close-chat-btn" title="Cerrar chat">&times;</button>
+            </div>
+        </div>
+        <div id="chat-box" class="chat-box">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Pregunta sobre una planta o síntoma...">
+            <button id="send-chat-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <button id="open-chat-btn" class="chat-fab"><i class="fas fa-comments"></i></button>
+
+    <footer class="footer">
+        <p>&copy; <span id="copyright-year">2025</span> Jhonatan MG. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
